@@ -1,0 +1,199 @@
+@import './colors.css';
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    background: var(--red);
+    background: url(./mobile\ background.png);
+    
+}
+p{
+    margin: 0px;
+}
+.container{
+    width: 327px;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin-top:88px;
+    margin-bottom: 64px;
+    display: grid;
+    gap:16px;
+}
+.head h1,
+.head p{
+    margin: 0px;
+}
+.trial-info-btn{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 66px 18px 67px;
+    height: 88px;
+    background: var(--blue);
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.trial-info-btn a,
+.trial-info-btn span{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.268px;
+}
+.trial-info-btn a{
+    font-weight: 700;
+}
+h1{
+    padding-inline: 10px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.292px;
+}
+.head p{
+    height: 130px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.card-with-info{
+    display: grid;
+    gap: 24px;
+    margin-bottom: 88px;
+}
+.card{
+    padding: 24px;
+    display: grid;
+    gap: 16px;
+    text-align: center;
+    width: 327px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.card input{
+    width: 279px;
+    height: 56px;
+    border: 1px solid #DEDEDE;
+    background: #fff;
+    border-radius: 5px;
+    padding-left: 19.41px;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    
+}
+::placeholder{
+    font-size:14px;
+    color: var(--black);
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    line-height: 26px;
+    opacity: 0.75;
+}
+.card-btn{
+    width: 100%;
+    height: 56px;
+    background: var(--green);
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.card>div a{
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.card>div p{
+    color: #BAB7D4;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 21px;
+}
+input:focus{
+    border-color: var(--blue);
+    outline: none;
+}
+.card-btn:hover{
+    background:#77E2B3;
+}
+.alert,
+.alert-lastname,
+.alert-gmail,
+.alert-pass
+{
+    color: var(--red);
+    text-align: right;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+.card div{
+    position: relative;
+}
+.icn-1,.icn-2,.icn-3,.icn-4{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.icn-1.active,.icn-2.active,.icn-3.active,.icn-4.active{
+    display: block;
+}
+@media screen and (min-width:1200px) {
+    .container{
+        width: 100%;
+        margin: auto;
+        padding-inline: 165px;
+        display: grid;
+        grid-template-columns: 525px 540px;
+        gap: 45px;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 540px;
+        
+    }
+    h1{
+        padding: 0px;
+        font-size: 50px;
+        letter-spacing: -0.521px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+    .head{
+        text-align: start;
+    }
+    .trial-info-btn {
+        height: 60px;
+        padding: 17px 112px;
+    }
+    .card-with-info{
+        margin-block: 121px;
+    }
+    .card input{
+        width: 492px;
+    }
+}
